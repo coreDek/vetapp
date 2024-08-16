@@ -1,0 +1,111 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: black;
+    --secundario: #4e4e4edc;
+    --verde: #206305;
+    --verdes: #3b7e20;
+    --verdet: #004712;
+    --fuente-principal: 3rem;
+    --fuente: 2rem;
+}
+
+header {
+    position: relative; /* Necesario para posicionar el hijo de forma absoluta */
+    width: 100%;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    background-color: #3b7e20; /* Color de fondo del header */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 0.8px; /* Espaciado interno */
+  }
+  
+  .img-container {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Ajusta el tamaño de la imagen */
+    /*background-image: url('imatgvetaoo-removebg-preview2 (1)1312.jpg');*/
+    background-size: contain; /* Cubre todo el contenedor de la imagen */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  }
+  
+  h1 {
+    margin-left: 70rem; /* Ajusta el margen para evitar que el texto se superponga a la imagen */
+    color: #333; /* Color del texto */
+  }
+
+.titulo {
+    color: var(--blanco);
+    text-align: center;
+    font-size: var(--fuente-principal);
+
+}
+
+.titulop {
+    text-align: center;
+    font-size: var(--fuente);
+    color: #3b7e20;
+}
+
+.subtitulo {
+    color: var(--verde);
+}
+
+
+.nav-bg {
+    background-color: var(--gris);
+}
+
+.navegacion-principal {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 87px;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    background-color: var(--verdes);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--verdet);
+    /* Cambio de color al pasar el mouse */
+}
+
+
+.parrafo {
+    font-size: 1rem;
+    text-align: center;
+    color: #0a611f;
+}
+
+.formulario {
+
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
